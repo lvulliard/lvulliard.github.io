@@ -29,19 +29,19 @@ permalink: /
 
             <h1>{{ site.name }}</h1>
             <h3>{{ site.description }}</h3>
-            <h4><i>Currently predoctoral fellow in the <a class = "inline-link" href="https://menchelab.com/">group of Jörg Menche.</a></i></h4>
+	    <h4><i>Currently <a class = "inline-link" href="https://www.aih-cluster.ai/">AIH</a> postdoctoral researcher in the groups of <a class = "inline-link" href="https://www.dkfz.de/en/systemimmunologie-und-einzelzell-biologie/index.php">Felix Hartmann</a> and <a class = "inline-link" href="https://saezlab.org/">Julio Saez-Rodriguez</a>.</i></h4>
 
                 <ul>
+                    {% if site.scholar_username %}l
+                    <li><a class="fa fa-2x fa-google" href="https://scholar.google.com/citations?user={{ site.scholar_username }}"><span class="description">Scholar</span></a></li>
+                    {% endif %}
+
                     {% if site.github_username %}
                     <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
                     {% endif %}
                     
                     {% if site.twitter_username %}
                     <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
-                    {% endif %}
-
-                    {% if site.scholar_username %}
-                    <li><a class="fa fa-2x fa-google" href="https://scholar.google.com/citations?user={{ site.scholar_username }}"><span class="description">Scholar</span></a></li>
                     {% endif %}
 
                     {% if site.linkedin_username %}
